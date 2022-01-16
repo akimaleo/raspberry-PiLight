@@ -12,7 +12,7 @@ EOL = "endloop"
 def init():
     sock = bluetooth.BluetoothSocket(bluetooth.RFCOMM)
     port = 1
-    sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+    sock.setsockopt(sock.SOL_SOCKET, sock.SO_REUSEADDR, 1)
     sock.bind(("", port))
     sock.listen(1)
 
