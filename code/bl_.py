@@ -11,7 +11,7 @@ EOL = "endloop"
 
 def init():
     sock = bluetooth.BluetoothSocket(bluetooth.RFCOMM)
-    port = 1
+    port = 23
     sock.bind(("", port))
     sock.listen(1)
 
