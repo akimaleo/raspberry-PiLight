@@ -8,6 +8,7 @@ Connect to raspberry via SSH:
 Basically file has to be created iin root directory to be able easily fetch changes from repo
 
 ```#!/bin/bash
+cd Desktop
 git clone https://github.com/akimaleo/raspberry-PiLight.git
 cd raspberry-PiLight
 git pull origin master
