@@ -152,15 +152,15 @@ def lightOn(indexes):
     strip = Adafruit_NeoPixel(LED_COUNT, LED_PIN, LED_FREQ_HZ, LED_DMA, LED_INVERT, LED_BRIGHTNESS,
                               LED_CHANNEL)
     strip.begin()
-    print "clear"
+    print("clear")
     for x in range(strip.numPixels()):
         strip.setPixelColor(x, Color(0, 0, 0))
 
-    print "set color"
+    print("set color")
     for x in indexes:
         strip.setPixelColor(x, Color(125, 125, 125))
 
-    print "show"
+    print("show")
     strip.show()
 
 
@@ -205,3 +205,4 @@ if __name__ == '__main__':
     except KeyboardInterrupt:
         if args.clear:
             colorWipe(strip, Color(0, 0, 0), 10)
+            
