@@ -14,6 +14,7 @@ def init():
     port = 1
     sock.bind(("", port))
     sock.listen(1)
+    print ("Listening port(" + str(port) + ")")
 
     while True:
         openSock(sock)
