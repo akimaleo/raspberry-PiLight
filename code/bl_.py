@@ -56,6 +56,10 @@ def openSock(sock):
                 indexes = list(map(int, cleared.strip(indexes_req).split()))
                 print ("result", indexes)
                 lighton.lightOn(indexes)
+            elif rainbow in data:
+                lighton.rainbowStart()
+            elif main in data:
+                lighton.main()
         print ("oops")
     except bluetooth.btcommon.BluetoothError, KeyboardInterrupt:
         print ("err")
